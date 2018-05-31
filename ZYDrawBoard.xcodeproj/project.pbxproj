@@ -15,6 +15,8 @@
 		09C6808D20BFAB640031955E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C6808C20BFAB640031955E /* main.m */; };
 		09C6809720BFAB640031955E /* ZYDrawBoardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C6809620BFAB640031955E /* ZYDrawBoardTests.m */; };
 		09C680A220BFAB640031955E /* ZYDrawBoardUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C680A120BFAB640031955E /* ZYDrawBoardUITests.m */; };
+		09C680B220BFABC50031955E /* ZYDrawingLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C680B120BFABC50031955E /* ZYDrawingLayer.m */; };
+		09C680B520BFABD70031955E /* ZYDrawingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C680B420BFABD70031955E /* ZYDrawingView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		09C6809D20BFAB640031955E /* ZYDrawBoardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZYDrawBoardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09C680A120BFAB640031955E /* ZYDrawBoardUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYDrawBoardUITests.m; sourceTree = "<group>"; };
 		09C680A320BFAB640031955E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09C680B020BFABC50031955E /* ZYDrawingLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYDrawingLayer.h; sourceTree = "<group>"; };
+		09C680B120BFABC50031955E /* ZYDrawingLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYDrawingLayer.m; sourceTree = "<group>"; };
+		09C680B320BFABD70031955E /* ZYDrawingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYDrawingView.h; sourceTree = "<group>"; };
+		09C680B420BFABD70031955E /* ZYDrawingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYDrawingView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		09C6807C20BFAB610031955E /* ZYDrawBoard */ = {
 			isa = PBXGroup;
 			children = (
+				09C680AF20BFAB830031955E /* DrawBoard */,
 				09C6807D20BFAB610031955E /* AppDelegate.h */,
 				09C6807E20BFAB610031955E /* AppDelegate.m */,
 				09C6808020BFAB610031955E /* ViewController.h */,
@@ -130,6 +137,17 @@
 				09C680A320BFAB640031955E /* Info.plist */,
 			);
 			path = ZYDrawBoardUITests;
+			sourceTree = "<group>";
+		};
+		09C680AF20BFAB830031955E /* DrawBoard */ = {
+			isa = PBXGroup;
+			children = (
+				09C680B020BFABC50031955E /* ZYDrawingLayer.h */,
+				09C680B120BFABC50031955E /* ZYDrawingLayer.m */,
+				09C680B320BFABD70031955E /* ZYDrawingView.h */,
+				09C680B420BFABD70031955E /* ZYDrawingView.m */,
+			);
+			path = DrawBoard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +280,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09C680B520BFABD70031955E /* ZYDrawingView.m in Sources */,
 				09C6808220BFAB610031955E /* ViewController.m in Sources */,
 				09C6808D20BFAB640031955E /* main.m in Sources */,
 				09C6807F20BFAB610031955E /* AppDelegate.m in Sources */,
+				09C680B220BFABC50031955E /* ZYDrawingLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

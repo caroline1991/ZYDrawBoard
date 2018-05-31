@@ -7,7 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZYDrawingLayer.h"
 
 @interface ZYDrawingView : UIView
+
+@property (nonatomic, copy) void (^drawingLayerSelectedBlock)(BOOL isSelected);
+
+
+/**
+ 是画板，还是选择撤销
+ */
+@property (nonatomic, assign) BOOL isDrawing;
+
+- (void)revoke;
 
 @end
